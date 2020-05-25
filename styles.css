@@ -6,21 +6,25 @@
 	--brightYellow: hsl(71, 73%, 54%);
 	--lightGray: hsl(204, 43%, 93%);
 	--grayishBlue: hsl(218, 22%, 67%);
-	font-family: 'Karla', sans-serif;
-	font-size: 16px;
 }
 
 body {
 	background-color: var(--lightGray);
+	font-family: 'Karla', sans-serif;
+	font-size: 10px;
 }
 
 .container {
 	margin: 60px 30px;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
 }
 
 section {
 	margin: 0;
-	padding: 15px 22px;
+	padding: 10px 24px;
+	width: 100%;
 }
 
 .join {
@@ -30,21 +34,17 @@ section {
 }
 .join h1 {
 	color: var(--cyan);
-	font-size: 20px;
-	font-weight: 700;
 	margin-bottom: 30px;
+	font-size: 2em;
 } 
 
 .join h2 {
 	color: var(--brightYellow);
-	font-size: 16px;
-	font-weight: 700;
 	margin: 0px 0px 30px 0px;
 }
 
 .join h3 {
 	color: var(--grayishBlue);
-	font-size: 12px;
 	font-weight: 400;
 	line-height: 2;
 }
@@ -55,20 +55,17 @@ section {
 
 .subscription h2, .why-us h2 {
 	color: white;
-	font-size: 16px;
 	font-weight: 400;
 }
 
 .subscription h3 {
 	color: var(--lightGray);
-	font-size: 14px;
 	font-weight: 400;
 }
 
 .per-month {
 	color: var(--lightGray);
 	font-weight: 400;
-	font-size: 16px;
 }
 
 .price {
@@ -85,9 +82,8 @@ section {
 
 .why-us p {
 	color: var(--lightGray);
-	font-size: 12px;
 	font-weight: 400;
-	margin: 8px 0px;
+	margin: 5px 0px;
 	opacity: 0.7;
 }
 
@@ -99,7 +95,6 @@ button {
 	margin: 15px 0px;
 	color: white;
 	font-weight: 400;
-	font-size: 16px;
 }
 
 .attribution { 
@@ -113,5 +108,24 @@ button {
 }
 
 @media only screen and (min-width: 900px) {
+	body {
+		font-size: 14px;
+	}
+
+	.container {
+		max-width: 635px;
+	}
+
+	.join {
+		
+	}
+
+	.subscription, .why-us {
+		width: 50%;
+	}
+
+	section {
+		padding: 10px 40px;
+	}
 
 }
